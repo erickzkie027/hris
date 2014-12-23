@@ -1,0 +1,17 @@
+#top_container ul li{
+	display:inline-block;
+}
+	#top_container ul li:last-child{
+		margin-left:840px;
+	}
+#add_record a{
+	text-decoration: none;
+	color:black;
+}
+#main_container table tbody tr td:first-child{
+	text-align: left;
+	margin: left:10px;
+}
+.table > thead:first-child > tr:first-child > th, #main_container table tbody tr td{
+	padding-left:15px;
+}

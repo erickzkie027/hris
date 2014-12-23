@@ -1,0 +1,229 @@
+#main_navigation {
+  background: #404853;
+  border: none;
+  border-radius: 0px;
+  font-weight: bold;
+}
+#main_navigation * {
+  color: #fff !important;
+}
+#main_navigation .navbar-brand {
+  background: #45A0F3;
+}
+#main_navigation .nav.navbar-nav.navbar-left li {
+  padding: 15px 0px;
+}
+#main_navigation .nav.navbar-nav.navbar-left li a {
+  border-left: 2px solid #fff;
+  padding: 0px 15px !important;
+}
+#main_navigation .nav.navbar-nav.navbar-left li:first-child a {
+  border-left: none;
+}
+#main_navigation .nav.navbar-nav.navbar-left li.active a {
+  background: transparent;
+}
+#main_navigation .nav.navbar-nav.navbar-right .tab-label {
+  cursor: pointer;
+  margin-bottom: 0px !important;
+}
+#main_container {
+  padding: 0px;
+  margin-top: 50px;
+}
+#main_container #container_header {
+  margin-bottom: 10px;
+}
+#main_container #container_header * {
+  display: inline-block;
+}
+#main_container #container_header .col-header {
+  width: 74.65%;
+  text-align: left;
+}
+#main_container #container_header .col-form {
+  width: 25%;
+  text-align: right;
+}
+#main_container #container_header .col-form .col-form-6 {
+  width: 50%;
+}
+#main_container #container_header .col-form label {
+  margin-right: 10px;
+}
+#main_container table thead tr td {
+  background: #48A0F3;
+  color: #fff;
+  padding: 10px 8px;
+  padding-left: 20px;
+}
+#main_container table thead tr td:first-child {
+  background: #828282;
+  text-align: center;
+  padding-left: 0px;
+}
+#main_container table tbody tr td {
+  font-size: 0.86em;
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+#main_container table tbody tr td:first-child,
+#main_container table tbody tr td.image_data,
+#main_container table tbody tr td.text-centered {
+  text-align: center;
+}
+#main_container table tbody tr td .profile_image {
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+.alignment_container {
+  margin-bottom: 20px;
+}
+.alignment_container * {
+  display: inline-block;
+}
+.alignment_container.align_right_container {
+  text-align: right;
+}
+#pulltab_container .open_pullout_tab {
+  position: fixed;
+  display: none;
+}
+#pulltab_container .pullout-tab {
+  background: #F6F7F9;
+  border-left: 1px solid #DDE8EE;
+  height: 100%;
+  margin-top: 28px;
+  overflow: auto;
+  padding: 45px 75px 45px 45px !important;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 400px;
+  transform: translate(600px, 0px);
+  transition: transform 1s;
+  -webkit-transform: translate(600px, 0px);
+  -webkit-transition: -webkit-transform 1s;
+}
+#pulltab_container .pullout-tab.open {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+#pulltab_container .pullout-tab form {
+  margin-bottom: 0px;
+}
+#pulltab_container .pullout-tab form input,
+#pulltab_container .pullout-tab form select,
+#pulltab_container .pullout-tab form textarea {
+  border-radius: 0px;
+}
+#pulltab_container .pullout-tab form input[type='text'],
+#pulltab_container .pullout-tab form input[type='email'],
+#pulltab_container .pullout-tab form input[type='password'],
+#pulltab_container .pullout-tab form input[type='date'],
+#pulltab_container .pullout-tab form select {
+  margin-bottom: 10px;
+}
+#pulltab_container .pullout-tab form .form-control {
+  margin-bottom: 10px;
+}
+#pulltab_container .pullout-tab form .form-control .upload_button {
+  width: 100%;
+}
+#pulltab_container .pullout-tab form input[type='file'] {
+  display: none;
+}
+#pulltab_container .pullout-tab form label {
+  font-weight: normal;
+}
+#pulltab_container .pullout-tab form textarea {
+  height: 60px;
+  margin-bottom: 10px;
+  resize: none;
+}
+#pulltab_container .pullout-tab h3 {
+  margin-top: 0px;
+  text-align: center;
+}
+#pulltab_container .open_pullout_tab:checked + .pullout-tab {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.align.align_right {
+  text-align: right;
+}
+.align .input-group .input-group-addon {
+  height: 34px !important;
+  margin-top: 1px;
+  width: auto;
+}
+.align .input-group .input-group-addon .glyphicon {
+  height: 19px;
+}
+.align .input-group .form-control {
+  display: block !important;
+  width: auto;
+}
+/* PAGE SPECIFIC STYLES */
+#add_employee_button {
+  cursor: pointer;
+}
+#employee_history_container h5 {
+  margin-bottom: 20px;
+}
+#employee_history_container #container_header {
+  margin-bottom: 5px;
+}
+#employee_history_container #user_location_filters {
+  margin-bottom: 5px;
+}
+#employee_history_container #user_location_filters li {
+  margin-left: 5px;
+}
+#employee_history_container #user_location_filters li:first-child {
+  margin-left: 0px;
+}
+#employee_history_container #user_location_filters li label {
+  display: inline-block;
+  padding-left: 20px;
+}
+#employee_history_container #date_filters {
+  margin-bottom: 8px;
+}
+#employee_history_container #date_filters li {
+  margin-left: 5px;
+}
+#employee_history_container #date_filters li:first-child {
+  margin-left: 0px;
+}
+#employee_history_container #date_filter_presets {
+  font-size: 0.86em;
+  line-height: 0.86em;
+  margin-bottom: 0px;
+}
+#employee_history_container #date_filter_presets li {
+  margin-left: 20px;
+  line-height: 0.86em;
+}
+#employee_history_container #date_filter_presets li:first-child {
+  margin-left: 0px;
+}
+#employee_history_container #date_filter_presets li a {
+  /*line-height: 0.86em;*/
+}
+#employee_history_container #download_csv_link {
+  color: #818181;
+  font-weight: bold;
+}
+#employee_history_container #download_csv_link:hover {
+  text-decoration: none;
+}
+#employee_history_container #download_csv_link:hover .span_text {
+  text-decoration: underline;
+}
+#employee_history_container .col-pd-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}

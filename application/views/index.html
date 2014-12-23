@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/vendor/tablesorter/themes/blue/style.css">
+    <script type="text/javascript" src="assets/js/vendor/jquery-1.11.1.min.js"></script> 
+    <script type="text/javascript" src="assets/js/vendor/tablesorter/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap/modal.js"></script> 
+  </head>
+  <body>
+    <nav id="main_navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">DMMMMSU HRIS</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">PDS</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <label for="open_settings_tab" class="tab-label"><span class="glyphicon glyphicon-cog"></span></label>
+              </a>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="main_container" class="container">
+      <h3>Personal Data Sheet Records</h3>
+      <div id="top_container">
+        <ul class="list-unstyled">
+          <li>
+            <form class="form-inline" role="form">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="search here...">
+                </div><!-- /input-group -->
+            </form>
+          </li>
+          <li>
+            <div id="add_record">
+                <a href="personal_data_sheet_page1.html">
+                  <h4><img src="assets/images/icon_plus.png" alt=""> Add Record</h4>
+                </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="table-responsive">  
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Address</th>
+              <th>Cellphone Number</th>
+              <th>Email Address</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sky D. Flakes</td>
+              <td>19</td>
+              <td>E. Rimando Street, Ortiz, Naguilian, USA</td>
+              <td>09020202022</td>
+              <td>sky_flakes@sky.com</td>
+              <td><p><a href="personal_data_sheet_page1.html"><button class="btn btn-primary btn-xs" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td>
+              <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+            </tr>
+            <tr>
+              <td>Sky D. Flakes</td>
+              <td>19</td>
+              <td>E. Rimando Street, Ortiz, Naguilian, USA</td>
+              <td>09020202022</td>
+              <td>sky_flakes@sky.com</td>
+              <td><p><a href="personal_data_sheet_page1.html"><button class="btn btn-primary btn-xs" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td>
+              <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="pagination pull-right">
+          <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        </ul>   
+      </div>  
+      <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-warning"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+              </div>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+              </div>
+            </div>
+        </div>
+     </div><!-- end modal delete --> 
+    </div>
+  </body>
+</html>

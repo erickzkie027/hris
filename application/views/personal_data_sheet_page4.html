@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Page 4</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/global.css">
+		<link rel="stylesheet" href="assets/css/personal_data_sheet_page4.css">
+		<link rel="stylesheet" href="assets/css/vendor/tablesorter/themes/blue/style.css">
+		<script type="text/javascript" src="assets/js/vendor/jquery-1.11.1.min.js"></script> 
+		<script type="text/javascript" src="assets/js/vendor/tablesorter/jquery.tablesorter.min.js"></script> 
+		<script>
+			jQuery(document).ready(function($){
+				/* Voluntary Works */
+			    $('.add_field_button').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][name_of_organization]" type="text" class="form-control" placeholder=""></td><td><input name="data[][Address]" type="text" class="form-control" placeholder=""></td><td><input name="data[][from]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][to]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][number_of_hours]" type="text" class="form-control" placeholder=""></td><td><input name="data[][position]" type="text" class="form-control" placeholder=""></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#add_voluntary_work').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#add_voluntary_work').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* End Voluntary Works */
+				/* Training Programs */
+				$('.add_button_programs').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][title_of_seminar]" type="text" class="form-control" placeholder=""></td><td><input name="data[][from]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][to]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][number_of_hours]" type="text" class="form-control" placeholder=""></td><td><input name="data[][conducted]" type="text" class="form-control" placeholder=""></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#add_training_programs').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#add_training_programs').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* End Training Programs */
+				/* Other Information */
+				$('.add_button_information').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][special_skills]" type="text" class="form-control" placeholder=""></td><td><input name="data[][recognition]" type="text" class="form-control" placeholder=""></td><td><input name="data[][organization]" type="text" class="form-control" placeholder=""></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#add_other_information').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#add_other_information').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* End Other Information */
+				/* Reference */
+				$('.add_button_references').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][name]" type="text" class="form-control" placeholder=""></td><td><input name="data[][address]" type="text" class="form-control" placeholder=""></td><td><input name="data[][telephone_number]" type="text" class="form-control" placeholder=""></td><td><input name="data[][email_address]" type="email" class="form-control" placeholder=""></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#add_references').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#add_references').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* End Reference */
+			});
+		</script> 
+	</head>
+	<body>
+		<nav id="main_navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">DMMMMSU HRIS</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="#">PSD</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">
+								<label for="open_settings_tab" class="tab-label"><span class="glyphicon glyphicon-cog"></span></label>
+							</a>
+						</li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-out"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="main_container" class="container">
+			<form action="">
+				<h1>Personal Data Sheet <small>Page(4 of 5)</small></h1>
+				<h4>VI. VOLUNTARY WORK <img class="add_field_button" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="add_voluntary_work" class="table">
+					<thead>
+						<tr>
+							<th>Name of Organization</th>
+							<th>Address</th>
+							<th>From</th>
+							<th>To</th>
+							<th>Number of Hours</th>
+							<th>Position</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="data[0][name_of_organization]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][address]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][from]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][to]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][number_of_hours]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][position]" type="text" class="form-control" placeholder=""></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>VII. TRAINING PROGRAMS <img class="add_button_programs" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="add_training_programs" class="table">
+					<thead>
+						<tr>
+							<th data-toggle="tooltip" data-placement="top" title="Conference/Workshop/Short Courses">Title of Seminar</th>
+							<th>From</th>
+							<th>To</th>
+							<th>Number of Hours</th>
+							<th>Conducted/Sponsored by</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="data[0][title_of_seminar]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][from]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][to]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][number_of_hours]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][conducted]" type="text" class="form-control" placeholder=""></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>VIII. OTHER INFORMATION <img class="add_button_information" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="add_other_information" class="table">
+					<thead>
+						<tr>
+							<th>Special Skills/Hobbies</th>
+							<th>Non-Academic Distinctions/Recognition</th>
+							<th>Membership in Association/Organization</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="data[0][special_skills]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][recognition]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][organization]" type="text" class="form-control" placeholder=""></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>REFERENCES <img class="add_button_references" src="assets/images/icon_plus.png" alt=""></h4>
+				<table  id="add_references" class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Address</th>
+							<th>Telephone No.</th>
+							<th>Email Address</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="data[0][name]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][address]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][telephone_number]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][email_address]" type="email" class="form-control" placeholder=""></td>
+						</tr>
+					</tbody>
+				</table>
+				<nav>
+					<ul class="pager">
+				   		<li class="previous">
+				   			<a href="personal_data_sheet_page3.html">
+				   				<button type="submit" class="btn btn-default"><span aria-hidden="true">&larr;</span> Previous</button>
+				   			</a>
+				   		</li>
+				   		<li class="next">
+				   			<a href="personal_data_sheet_page5.html">
+				   				<button type="submit" class="btn btn-default">Next <span aria-hidden="true">&rarr;</span></button>
+				   			</a>
+				   		</li>
+				  	</ul>
+				</nav>
+			</form>
+		</div>
+	</body>
+</html>

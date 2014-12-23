@@ -1,0 +1,34 @@
+th{
+	text-align: center;
+}
+.form-control{
+	margin-bottom: 15px;
+}
+.panel{
+	background-color: #FAFBFA;
+	border: 1px solid #E0E0E0;
+	font-size: 14px;
+}
+.inline li{
+	display: inline;
+}
+textarea.form-control{
+	display:none;
+}
+.btn-default{
+	color:#31A6FF;
+	border-radius:15px;
+}
+.next a button{
+	background-color: #5CB85C;
+	color: white;
+	border-radius:15px;
+}
+	.next a button:hover{
+		background-color: #259A49;
+		color:white;
+	}
+.pager li>a, .pager li>span{
+padding: 0px 0px;
+border:none;
+}

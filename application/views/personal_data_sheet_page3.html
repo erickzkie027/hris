@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Page 3</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/global.css">
+		<link rel="stylesheet" href="assets/css/personal_data_sheet_page3.css">
+		<link rel="stylesheet" href="assets/css/vendor/tablesorter/themes/blue/style.css">
+		<script type="text/javascript" src="assets/js/vendor/jquery-1.11.1.min.js"></script> 
+		<script type="text/javascript" src="assets/js/vendor/tablesorter/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/bootstrap/tooltip.js"></script> 
+		<script>
+			jQuery(document).ready(function($){
+				/* Educational Background */
+			    $('.add_button_level').click(function(){
+			        var wrapper = $('<tr class="text-box"><td><select name="data[][level]" class="form-control"><option>Select Level</option><option>Elementary</option><option>Secondary</option><option>Vocational/Trade Course</option><option>College</option><option>Graduate Studies</option></select></td><td><input name="data[][school] type="text" class="form-control" placeholder=""></td><td><input name="data[][degree] type="text" class="form-control" placeholder=""></td><td><input name="data[][year_graduated] type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][units_earned] type="text" class="form-control" placeholder=""></td><td><input name="data[][from] type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][to] type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][recognition] type="text" class="form-control" placeholder=""></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#educational_background').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#educational_background').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* end Educational Background */
+				/* Civil Service Eligibility */
+				$('.add_civil_service_eligibility').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][eligibility_title]" type="text" class="form-control" placeholder=""></td><td><input name="data[][rating]"  type="text" class="form-control" placeholder=""></td><td><input name="data[][date_of_examination]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][place_of_examination]" type="text" class="form-control" placeholder=""></td><td><input name="data[][number]" type="text" class="form-control" placeholder=""></td><td><input name="data[][released_date]" type="date" class="form-control" placeholder="Start Date"></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#civil_service_elgibility').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#civil_service_elgibility').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* end Civil Service Eligibility */
+				/* Work Experience */
+				$('.add_button_work_experience').click(function(){
+			        var wrapper = $('<tr><td><input name="data[][from]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][to]" type="date" class="form-control" placeholder="Start Date"></td><td><input name="data[][position]" type="text" class="form-control" placeholder=""></td><td><input name="data[][company]" type="text" class="form-control" placeholder=""></td><td><input name="data[][monthly_salary]" type="text" class="form-control" placeholder=""></td><td><input name="data[][step_increment]" type="text" class="form-control" placeholder=""></td><td><input name="data[][status_of_appointment]" type="text" class="form-control" placeholder=""></td><td><select name="data[][monthly_service]" class="form-control"><option>Yes</option><option>No</option></select></td><td><a class="remove-box" href="#">Remove</a></td></tr>');
+			        wrapper.hide();
+			        $('#add_work_experience').append(wrapper);
+			        wrapper.fadeIn('slow');
+			        return false;
+			    });
+				    $('#add_work_experience').on('click', '.remove-box', function(){
+				    $(this).parent().siblings().siblings().fadeOut("slow", function() {
+				        $(this).siblings().remove();
+				    });
+				    return false;
+				});
+				/* end Work Experience */
+			});	
+		</script> 
+	</head>
+	<body>
+		<nav id="main_navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">DMMMMSU HRIS</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="#">PSD</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">
+								<label for="open_settings_tab" class="tab-label"><span class="glyphicon glyphicon-cog"></span></label>
+							</a>
+						</li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-out"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="main_container" class="container">
+			<form action="">
+				<h1>Personal Data Sheet <small>Page(3 of 5)</small></h1>
+				<h4>III. EDUCATIONAL BACKGROUND <img class="add_button_level" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="educational_background" class="table">
+					<thead>
+						<tr>
+							<th>Level</th>
+							<th>School</th>
+							<th>Degree</th>
+							<th>Year Graduated</th>
+							<th data-toggle="tooltip" data-placement="top" title="Highest/Grade/Level(if not Graduated)">Units Earned</th>
+							<th>From</th>
+							<th>To</th>
+							<th data-toggle="tooltip" data-placement="top" title="Scholarship/ Academic Honors Received">Recognition</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-box">
+							<td>
+								<select name="data[0][level]"  class="form-control" placeholder=>
+									<option>Select Level</option>
+								  	<option>Elementary</option>
+								  	<option>Secondary</option>
+								  	<option>Vocational/Trade Course</option>
+								  	<option>College</option>
+								  	<option>Graduate Studies</option>
+								</select>
+							</td>
+							<td><input name="data[0][school]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][degree]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][year_graduated]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][units_earned]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][from]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][to]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][recognition]" type="text" class="form-control" placeholder=""></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>IV. CIVIL SERVICE ELIGIBILITY <img class="add_civil_service_eligibility" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="civil_service_elgibility" class="table">
+					<thead>
+						<tr>
+							<th data-toggle="tooltip" data-placement="top" title="Career Service/RA 1080(BOARD/BAR) under Special LAWS/CES/CSEE">Eligibility Title</th>
+							<th>Rating</th>
+							<th>Date of Examination</th>
+							<th>Place of Examination</th>
+							<th>License Number</th>
+							<th>Released Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="rating[0][eligibility_title]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="rating[0][rating]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="rating[0][date_of_examination]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="rating[0][place_of_examination]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="rating[0][number]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="rating[0][released_date]" type="date" class="form-control" placeholder="Start Date"></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>V. WORK EXPERIENCE <img class="add_button_work_experience" src="assets/images/icon_plus.png" alt=""></h4>
+				<table id="add_work_experience" class="table">
+					<thead>
+						<tr>
+							<th>From</th>
+							<th>To</th>
+							<th>Position</th>
+							<th>Company</th>
+							<th>Monthly Salary</th>
+							<th>Step Increment</th>
+							<th>Status of appointment</th>
+							<th>Gov't service monthly</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="data[0][from]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][to]" type="date" class="form-control" placeholder="Start Date"></td>
+							<td><input name="data[0][position]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][company]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][monthly_salary]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][step_increment]" type="text" class="form-control" placeholder=""></td>
+							<td><input name="data[0][status_of_appointment]" type="text " class="form-control" placeholder=""></td>
+							<td>
+								<select name="data[0][monthly_service]" class="form-control">
+								  	<option>Yes</option>
+								 	<option>No</option>
+								</select>
+							</td
+						</tr>
+					</tbody>
+				</table>
+				<nav>
+				  	<ul class="pager">
+				   		<li class="previous">
+				   			<a href="personal_data_sheet_page2.html">
+				   				<button type="submit" class="btn btn-default"><span aria-hidden="true">&larr;</span> Previous</button>
+				   			</a>
+				   		</li>
+				   		<li class="next">
+				   			<a href="personal_data_sheet_page4.html">
+				   				<button type="submit" class="btn btn-default">Next <span aria-hidden="true">&rarr;</span></button>
+				   			</a>
+				   		</li>
+				  	</ul>
+				</nav>
+			</form>
+		</div>
+	</body>
+</html>

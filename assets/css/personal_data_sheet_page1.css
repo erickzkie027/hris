@@ -1,0 +1,38 @@
+#bottom_information div{
+	display:inline-table;
+}
+#personal_information_top_container ul li{
+	display:inline;
+}
+	#personal_information_top_container .form-control{
+		width: 250px;
+		display:inline;
+	}
+	#personal_information_top_container ul li:nth-child(1n+2){
+		margin-left:20px;
+	}
+.form-control{
+	margin-bottom: 15px;
+	width: 420px;
+}
+#personal_information_left_container{
+	width:540px;
+}
+	#personal_information_left_container ul li:nth-child(3),li:nth-child(4){
+		margin-bottom:15px;
+	}
+.radio label, .checkbox label{
+	margin-left:20px;
+}
+#personal_information_right_container{
+	width: 540px;
+	margin-left:70px;
+}
+.btn-default{
+	color:#31A6FF;
+	border-radius:15px;
+}
+.pager li>a, .pager li>span{
+padding: 0px 0px;
+border:none;
+}

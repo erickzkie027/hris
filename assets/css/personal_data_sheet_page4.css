@@ -1,0 +1,20 @@
+img{    
+    cursor: pointer;
+}
+th{
+	text-align: center;
+}
+.form-control{
+	margin-bottom: 15px;
+}
+.table>tbody>tr>td{
+	border-top: none;
+}
+.btn-default{
+	color:#31A6FF;
+	border-radius:15px;
+}
+.pager li>a, .pager li>span{
+	padding: 0px 0px;
+	border:none;
+}

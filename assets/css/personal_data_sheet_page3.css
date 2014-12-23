@@ -1,0 +1,42 @@
+th{
+	text-align: center;
+}
+img {    
+    cursor: pointer;
+}
+#bottom_information div{
+	display:inline-table;
+}
+#personal_information_top_container ul li{
+	display:inline;
+}
+	#personal_information_top_container .form-control{
+		width: 200px;
+		display:inline;
+	}
+	#personal_information_top_container ul li:nth-child(1n+2){
+		margin-left:20px;
+	}
+	#personal_information_top_container .form-control{
+	margin-bottom: 0;
+	}
+.form-control{
+	margin-bottom: 15px;
+}
+.name{
+	width: 820px;
+}
+.table>thead>tr>th:first-child{
+	width:150px;
+}
+.table>tbody>tr>td{
+	border-top: none;
+}
+.btn-default{
+	color:#31A6FF;
+	border-radius:15px;
+}
+.pager li>a, .pager li>span{
+padding: 0px 0px;
+border:none;
+}
